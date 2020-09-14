@@ -20,12 +20,12 @@ print("The identity matrix is:\n", d)
 e = np.arange(0, 30, 5)     # will get integers
 print("Arrange 0 to 30 with step-size 5: ", e)
 
-# create a sequence of 10 values in range 0 to 5
+# create a sequence of 10 values(float) in range 0 to 5
 f = np.linspace(0, 5, 10)   # will get float
 print("0 to 5 with 10 values using linspace fun: ", f)
 
 arr = np.array([[1, 2, 3, 4], [5, 2, 4, 2], [1, 2, 0, 1]])
-new_arr = arr.reshape(4, 3)
+new_arr = arr.reshape(4, 3)     # old array in new dimensions
 print("New shaped matrix is:\n", new_arr)
 
 arr = np.array([[-1, 2, 0, 4], [4, -0.5, 6, 0], [2.6, 0, 7, 8], [3, -7, 4, 2]])
