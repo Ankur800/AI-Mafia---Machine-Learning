@@ -2,7 +2,8 @@
 import numpy as np
 
 # 2. Print the numpy version and the configuration
-print(np.__version__)
+print("Version is: ", np.__version__)
+print("Configuration is: ")
 print(np.show_config())
 
 # 3. Create a null vector of size 10
