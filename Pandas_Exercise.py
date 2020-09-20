@@ -7,7 +7,7 @@ import pandas as pd
 # The imdb.csv dataset contains Highest Rated IMDb "Top 1000" Titles.
 
 # load imdb dataset as pandas dataframe
-df_movies = pd.read_csv("/home/ankur/Documents/imdb_1000.csv")
+df_movies = pd.read_csv("/home/ankur/PycharmProjects/Data/imdb_1000.csv")
 
 # show first 5 rows of imdb_df
 print(df_movies.head())
@@ -15,7 +15,7 @@ print(df_movies.head())
 # The bikes.csv dataset contains information about the number of bicycles that used certain bicycle lanes in Montreal in the year 2012.
 # load bikes dataset as pandas dataframe
 d_parser = lambda x: pd.datetime.strptime(x, '%d/%m/%Y')
-df_bikes = pd.read_csv("/home/ankur/Documents/bikes.csv", sep=';', parse_dates=['Date'], date_parser=d_parser)
+df_bikes = pd.read_csv("/home/ankur/PycharmProjects/Data/bikes.csv", sep=';', parse_dates=['Date'], date_parser=d_parser)
 
 # show first 3 rows of bikes_df
 print(df_bikes.head(3))
