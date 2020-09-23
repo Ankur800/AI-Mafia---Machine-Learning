@@ -12,7 +12,7 @@ dfy = dfy.values
 x = dfx.reshape((-1,))
 y = dfy.reshape((-1,))
 
-x = (x - x.mean()) / x.std()
+x = (x - x.mean()) / x.std()        # Shifting points to origin, i.e. fixing a range for points
 y = y
 plt.scatter(x, y)
 plt.show()
