@@ -122,28 +122,28 @@ print(f1)
 
 fig = plt.figure()
 ax = plt.axes(projection="3d")
-ax.scatter3D(f2,f3,f1,  cmap='hsv')
+ax.scatter3D(f2, f3, f1,  cmap='hsv')
 # plt.show()
 
 xt = f2
 yt = f3
 zt = -((W[1]*xt + W[2]*yt + b)/W[0])
 
-ax.plot3D(xt,yt,zt,color = 'k',alpha = 0.2)
+ax.plot3D(xt, yt, zt, color='k', alpha=0.2)
 plt.show()
 
 # Testing Data
 
 fig = plt.figure()
 ax = plt.axes(projection="3d")
-ax.scatter3D(f2_test,f3_test,f1_test,  cmap='hsv')
+ax.scatter3D(f2_test, f3_test, f1_test, cmap='hsv')
 # plt.show()
 
 xt = f2_test
 yt = f3_test
 zt = (-(W[1]*xt + W[2]*yt + b)/W[0])
 
-ax.plot3D(xt,yt,zt,color = 'k',alpha = 0.2)
+ax.plot3D(xt, yt, zt, color='k', alpha=0.2)
 plt.show()
 
 print(W)
