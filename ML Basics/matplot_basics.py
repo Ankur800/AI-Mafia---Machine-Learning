@@ -50,7 +50,7 @@ height = [10, 24, 36, 40, 5]
 tick_labels = ['one', 'two', 'three', 'four', 'five']
 
 # Plotting a bar chart
-plt.bar(left, height, tick_label = tick_labels, width=0.8, color=['red', 'blue'])
+plt.bar(left, height, tick_label=tick_labels, width=0.8, color=['red', 'blue'])
 plt.show()
 
 # HISTOGRAMS
